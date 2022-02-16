@@ -8,3 +8,37 @@ red - #ee5253
 
 */
 
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-size: 100%;
+}
+
+header {
+  margin: 0;
+  border: 2px black;
+  background-color: #0fb9b1;
+  height: 100px;
+}
+
+main {
+  /* margin: 1em; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 150px;
+  background-color: rgba(225, 225, 225, .9);
+}
+
+.meal-select {
+  display: flex;
+  align-items: flex-start;
+}
