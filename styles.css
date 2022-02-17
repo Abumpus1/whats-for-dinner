@@ -61,6 +61,14 @@ span {
   font-size: 125%;
 }
 
+#center-output {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .radio-button {
   margin-bottom: 25px;
 }
@@ -74,7 +82,14 @@ span {
   font-size: 75%;
 }
 
+.meal-idea {
+  margin: 0px;
+  font-size: 300%;
+}
+
 #should-make {
+  margin: 0px;
+  font-size: 120%;
   font-style: italic;
 }
 

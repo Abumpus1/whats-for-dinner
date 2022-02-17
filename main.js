@@ -22,7 +22,6 @@ function getRandomIndex(array) {
 }
 
 function displayMealIdea() {
-  // mealIdea.innerText = `${sides[1]}!`;
   for (var i = 0; i < radioButtons.length; i++) {
     if (radioButtons[i].checked) {
       mealIdea.innerText = `${meals[i][getRandomIndex(meals[i])]}!`
