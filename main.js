@@ -13,8 +13,8 @@ letsCookBtn.addEventListener("click", displaySuggestion);
 
 function displaySuggestion() {
   displayMealIdea();
-  toggle(pot);
-  toggle(mealView);
+  hide(pot);
+  show(mealView);
 }
 
 function getRandomIndex(array) {
@@ -30,6 +30,10 @@ function displayMealIdea() {
   }
 }
 
-function toggle(element) {
-  element.classList.toggle("hidden");
+function show(element) {
+  element.classList.remove("hidden");
+}
+
+function hide(element) {
+  element.classList.add("hidden");
 }
