@@ -74,6 +74,10 @@ span {
   font-size: 75%;
 }
 
+#should-make {
+  font-style: italic;
+}
+
 #pot-container {
   height: 135px;
   width: 135px;
