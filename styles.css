@@ -16,6 +16,10 @@ body {
   background-size: 100%;
 }
 
+* {
+  /* border: solid black 1px; */
+}
+
 header {
   display: flex;
   align-items: center;
@@ -47,7 +51,7 @@ section {
   background-color: rgba(225, 225, 225, .9);
 }
 
-span {
+.required {
   color: #ee5253;
 }
 
@@ -72,6 +76,7 @@ span {
 .radio-button {
   margin-bottom: 25px;
 }
+
 
 #cook-button {
   border-radius: 5px;
