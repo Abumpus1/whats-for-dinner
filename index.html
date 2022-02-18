@@ -1,52 +1,54 @@
 <html>
-  <head>
-    <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  </head>
-  <body background="./assets/burger-friends.jpg">
-    <header>
-      <div id="header-container">
-        <h2>What's for Dinner?</h2>
-      </div>
-    </header>
-    <main>
-      <section id="meal-box">
-        <article id="meal-container">
-          <h2>What are you looking for?<span class="required">*</span></h2>
-          <div class="radio-button">
-            <input type="radio" id="side" name="dish" value="side">
-            <label for="side">Side</label>
+<head>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body background="./assets/burger-friends.jpg">
+  <header>
+    <div id="header-container">
+      <h2>What's for Dinner?</h2>
+    </div>
+  </header>
+  <main>
+    <section id="meal-box">
+      <article id="meal-container">
+        <h2>What are you looking for?<span class="required">*</span></h2>
+        <div class="radio-button">
+          <input type="radio" id="side" name="dish" value="side">
+          <label for="side">Side</label>
+        </div>
+        <div class="radio-button">
+          <input type="radio" id="main-dish" name="dish" value="main-dish">
+          <label for="main-dish">Main Dish</label>
+        </div>
+        <div class="radio-button">
+          <input type="radio" id="dessert" name="dish" value="dessert">
+          <label for="dessert">Dessert</label>
+        </div>
+        <button id="cook-button">LET'S COOK!</button>
+      </article>
+    </section>
+    <section>
+      <article class="hidden" id="meal-view">
+        <div class="meal-flex">
+          <div class="sizing-box" id="upper-third">
+            <p id="should-make">You should make:</p>
           </div>
-          <div class="radio-button">
-            <input type="radio" id="main-dish" name="dish" value="main-dish">
-            <label for="main-dish">Main Dish</label>
+          <div id="middle-third">
+            <p class="meal-idea">Whoops! Something went wrong!</p>
           </div>
-          <div class="radio-button">
-            <input type="radio" id="dessert" name="dish" value="dessert">
-            <label for="dessert">Dessert</label>
-          </div>
-          <button id="cook-button">LET'S COOK!</button>
-        </article>
-      </section>
-      <section>
-        <article class="hidden" id="meal-view">
-          <div class="sizing-box third">
-          </div>
-          <div id="center-output">
-            <h3 id="should-make">You should make:</h3>
-            <h2 class="meal-idea">Whoops! Something went wrong!</h2>
-          </div>
-        <div class="clear third">
-          <div>
-            <button id="clear-button">CLEAR</button>
+          <div class="clear" id="lower-third">
+            <div>
+              <button id="clear-button">CLEAR</button>
+            </div>
           </div>
         </div>
       </article>
       <article id="pot-container">
         <img src="./assets/cookpot.svg">
-        </article>
-      </section>
-    </main>
-  </body>
-  <script type="text/javascript" src="main.js"></script>
+      </article>
+    </section>
+  </main>
+</body>
+<script type="text/javascript" src="main.js"></script>
 </html>

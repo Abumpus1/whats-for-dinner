@@ -14,7 +14,6 @@ var meals = [sides, mains, desserts];
 letsCookBtn.addEventListener("click", requireRadioCheck);
 clearBtn.addEventListener("click", clearSuggestion);
 
-
 function displaySuggestion() {
   hide(pot);
   show(mealView);
@@ -43,8 +42,8 @@ function createMealIdea() {
   for (var i = 0; i < radioButtons.length; i++) {
     radioLabels[i].classList.remove("required");
     if (radioButtons[i].checked) {
-      mealIdea.innerText = `${meals[i][getRandomIndex(meals[i])]}!`
-      displaySuggestion()
+      mealIdea.innerText = `${meals[i][getRandomIndex(meals[i])]}!`;
+      displaySuggestion();
     }
   }
 }
